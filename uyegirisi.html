@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exxen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/webp" href="anasayfa/icon2.webp" />
+    <style>
+      body {
+        background-color: black;
+        overflow-x: hidden;
+        box-sizing: border-box;
+      }
+      .exxen {
+        width: 340px;
+        height: 90px;
+        background-color: #ffcc33;
+        position: relative;
+        left: 10%;
+      }
+     
+      .buton {
+        position: relative;
+        left: 70%;
+      }
+      
+      .baslik {
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+      }
+      .formadi {
+        color: #ffcc33;
+        margin-bottom: 5px;
+        margin-top: 20px;
+      }
+      input {
+        width: 300px;
+        height: 40px;
+      }
+      #form {
+        background-color: #121212;
+        width: 450px;
+        height: 450px;
+        margin-top: 70px;
+        margin-bottom: 150px;
+      }
+      .formkonumu {
+        margin-left: 50px;
+      }
+      #formbaslik {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        
+      }
+      #uyeol{
+        width: 300px;
+        border: 5px solid black;
+        font-weight: bolder;
+        height: 50px;
+      }
+      .footer{
+        margin-bottom: 0;
+        background-color: #212121;
+        width: 100%;
+        height: 330px;
+        color: #9E9E9E;
+        
+      }
+      #hakkimizda{
+        position: relative;
+        left: 0%;
+        float: left;
+        margin-top: 50px;
+
+      }
+      .exxenspor{
+        text-decoration: none;
+        color: #ffcc33;
+        font-size: 13px;
+
+      }
+      .uyegirisi{
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+      }
+      a.exxenspor:hover{
+        color: #ffcc33;
+      }
+      a.uyegirisi:hover{
+        color: black;
+      }
+      .alticon{
+        color: white;
+        margin-left: 10px;
+      }
+     .uyegirisi2{
+      margin-top: 15px;
+          color: black;
+          background-color: #ffcc33;
+          border-style: solid;
+          border-width: 1px;
+          height: 40px;
+          position: relative;
+          left: 44%;
+          font-weight: bolder;
+     }
+     .sporbuton{
+      margin-top: 15px;
+          color: #ffcc33;
+          background-color: black;
+          border-style: solid;
+          border-width: 1px;
+          height: 40px;
+          position: relative;
+          left: 25%;
+          font-weight: bolder;
+     }
+     .dilbuton{
+      margin-top: 15px;
+      color: black;
+      background-color: #ffcc33;
+      border-style: solid;
+      border-width: 1px;
+      height: 40px;
+      position: relative;
+      left: 32%;
+      font-weight: bolder;
+      border: none;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="w-auto p-4" style="background-color: #ffcc33; height: 130px">
+      <a href="anasayfa.html"> <img class="exxen" src="anasayfa/logo.png" alt="" /></a>
+      <!--ÜYE GİRİŞİ BUTONU-->
+      <button
+        type="button buton"
+        class="uyegirisi2"
+        
+      >
+       <a class="uyegirisi" href="uyegirisi.html">Üye Girişi</a> 
+      </button>
+      <!--EXXENSPOR TİCARİ BUTONU-->
+      <button
+        type="button buton"
+        class="sporbuton"
+        
+      >
+       <a class="exxenspor" href="spor.html"> EXXENSPOR Ticari Üye Ol</a>
+      </button>
+      <button
+        type="button buton"
+        class="dilbuton"
+        
+      >
+      <i class="fa-solid fa-globe"></i>&nbsp&nbsp
+     TR &nbsp &nbsp<i class="fa-solid fa-caret-down"></i>
+      </button>
+    </div>
+
+    <!--FORM-->
+    <div class="container col-6" id="form">
+      <h3 id="formbaslik">Üye Girişi</h2>
+      <form action="" class="formkonumu">
+        
+        <label for="" class="formadi">E-Posta Adresi</label><br />
+        <input type="text" /><br />
+        
+        <label for="" class="formadi">Şifre</label> <br>
+        <input type="password" name="" id=""> <br>
+        <button type="button" class="btn btn-warning mt-4" id="uyeol">Giriş Yap</button>
+        <button type="button" class="btn btn-secondary mt-4" id="uyeol">Telefon Numarası İle Giriş Yap</button>
+      </form>
+    </div>
+    <!--FOOTER-->
+    <div div class="footer">
+      <div  style="float: left;"  >
+        <img style="width:55% ; margin-left: 50px; margin-top: 50px; "  src="anasayfa/uye2.png" alt="">
+      </div>
+      <div  id="hakkimizda">
+        <p><strong>Hakkımızda </strong></p>
+        <hr>
+        <p style="float: left;">Yardım Merkezi <br>
+          Kullanıcı Üyelik Sözleşmesi <br>        
+          Gizlilik Politikası<br>
+          Kullanım Şartları <br>
+          Çerez Politikası <br>
+          Kurumsal Bilgiler <br>
+          
+          <p style=" margin-left: 70px; position: relative; top: 0%; float: right; " > 
+            Mesafeli Satış Sözleşmesi <br>
+            Ön Bilgilendirme Formu <br>
+            Açık Rıza Metni <br>
+            Müşteri Aydınlatma Metni
+          </p></p></div>
+          
+        <div style="position: relative; left: 2%; float: left;">
+          <p style="padding-top:50px "><strong>Bizi Takip Edin</strong></p>
+          <hr style="width:300px ;">
+          <i class="fa-brands fa-instagram-square fa-2x alticon"></i>
+          <i class="fa-brands fa-facebook-square fa-2x alticon"></i>
+          <i class="fa-brands fa-twitter-square fa-2x alticon"></i>
+          <i class="fa-brands fa-youtube fa-2x alticon"></i>
+          <i class="fa-brands fa-tiktok fa-2x alticon"></i>
+  
+        </div>
+        <div style="float: left; margin-top:50px ; position: relative; left: 4%;" >
+          <p ><strong>Uygulamalarımız </strong></p>
+        <hr style="width:250px ;" >
+        <img style="height: 50px; margin-bottom:10px ;" src="anasayfa/resim2.png" alt=""> <br>
+           <img style="height:60px ; margin-bottom: 10px; width: 170px;" src="anasayfa/resim3.png" alt=""> <br>
+           <img style=" height: 60px; width: 170px;" src="anasayfa/resim4.png" alt="">
+        </div>
+        
+        
+        
+        <!--FOOTER BİTİŞ DİVİ-->
+        </div>
+        <script src="https://kit.fontawesome.com/f911f5b1d8.js" crossorigin="anonymous"></script>
+    <script>
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js";
+      integrity =
+        "sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2";
+      crossorigin = "anonymous";
+    </script>
+  </body>
+</html>
